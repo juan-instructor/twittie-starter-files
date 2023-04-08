@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #e3f4ff;
+}
+
+/* typography and icons */
+
+h1 {
+    color: #0f8cdf;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+i {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.liked {
+    color: red;
+}
+
+.retweeted {
+    color: limegreen;
+}
+
+/* layout */
+
+.twittie-main,
+.twittie-header {
+    width: 290px;
+    margin: 0 auto;
+}
+
+.twittie-main {
+    margin-bottom: 120px;
+}
+
+.twittie-header {
+    padding-bottom: 25px;
+}
+
+.twittie-header__heading {
+    text-align: right;
+}
+
+/* INPUT */
+
+.twittie__input {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.twittie__btn {
+    background-color: #1da1f2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* textareas + btn */
+
+textarea {
+    border: none;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    resize: none;
+}
+
+/* tweet */
+
+.twittie__tweet {
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.twittie__tweet-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.twittie__tweet-details {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.twittie__tweet-detail {
+    display: flex;
+    gap: 4px;
+}
+
+.twittie__tweet-reply {
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0px;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+.twittie__tweet-handle {
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+
+.twittie__tweet-text {
+    width: 207px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* images */
+
+.twittie__profile-picture {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 48px;
+}
+
+.twittie-footer  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1da1f2;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.twittie-footer__description {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.twittie-footer__heading {
+    margin-bottom: 0.5rem;
+}
+
+.twittie__btn--small {
+    background-color: white;
+    width: 120px;
+    color: #1da1f2;
+    white-space: nowrap;
+}
+
+.twittie__btn--small:not(:first-child) {
+    margin-left: 20px;
+}
+
+
+/* utility */
+.twittie__tweet-reply--hidden {
+    display: none;
+}
+
+.twittie__tweet-reply--show {
+    display: block;
+}

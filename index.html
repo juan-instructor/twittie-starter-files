@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>Twittie</title>
+</head>
+
+<body>
+    <header class="twittie-header">
+        <h1 class="twittie-header__heading">Twittie</h1>
+    </header>
+    <main class="twittie-main">
+        <section class="twittie">
+            <div class="twittie__input">
+                <img src="images/twitter.svg" class="twittie__profile-picture" />
+                <textarea id="twittie-input" name="" cols="30" rows="10" placeholder="What's happening?"></textarea>
+            </div>
+            <button id="twittie-btn" class="twittie__btn">Tweet</button>
+            <div class="twittie__feed" id="twittie-feed"></div>
+        </section>
+    </main>
+    <article class="twittie-footer">
+        <div>
+            <h2 class="twittie-footer__heading">Don't miss what's happening</h2>
+            <p class="twittie-footer__description">People on Twittie are the first to know</p>
+        </div>
+        <div>
+            <button class="twittie__btn twittie__btn--small">Log in</button>
+            <button class="twittie__btn twittie__btn--small">Sign up</button>
+        </div>
+    </article>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
